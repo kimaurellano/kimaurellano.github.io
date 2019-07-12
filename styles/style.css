@@ -1,0 +1,80 @@
+.page-global-container {
+  /* border: 1px solid #ccc; */
+}
+
+.label {
+  text-align: center;
+}
+
+.container-profile {
+  display: flex;
+  border: 1px solid rgb(224, 164, 86);
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container-profile > div {
+  /* border: 1px solid #ccc; */
+}
+
+.picture {
+  flex: 1;
+  width: 35%;
+}
+
+.src-image {
+  width: 100%;
+  height: auto;
+}
+
+.detail {
+  flex: 5;
+}
+
+.detail > ul > li {
+  list-style-type: none;
+  font-family: Calibri, sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.full-name {
+  /* border: 1px solid #ccc; */
+  font-family: Calibri, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.profile-content > .text {
+  font-size: 22px;
+}
+
+.profile-content {
+  /* border: 1px solid #ccc; */
+  font-family: Calibri, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+
+.projects-container > .projects {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border: 1px solid rgb(224, 164, 86);
+  margin-top: 5%;
+}
+
+.c1 {
+  float: inline-start;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 160px;
+  height: 160px;
+}
