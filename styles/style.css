@@ -1,21 +1,66 @@
-.page-global-container {
-  /* border: 1px solid #ccc; */
+body,
+html {
+  height: auto;
 }
 
-.label {
-  text-align: center;
+.header {
+  background: #fff;
+  position: fixed;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.09);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: 70px;
 }
 
-.container-profile {
-  display: flex;
-  border: 1px solid rgb(224, 164, 86);
-  margin-top: 5%;
-  margin-left: 5%;
+.header-nav {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header-nav > ul {
+  height: 100%;
+}
+
+.header-nav > ul > li {
+  font-family: "Open sans", Helvetica, sans-serif;
+  font-weight: bold;
+  list-style-type: none;
+  float: right;
+  margin-top: 0.5%;
+  margin-left: 1%;
   margin-right: 5%;
 }
 
-.container-profile > div {
-  /* border: 1px solid #ccc; */
+.nav-links > .git {
+  margin-left: 20px;
+}
+
+.nav-links > li {
+  cursor: pointer;
+}
+
+.media {
+  float: left;
+  margin-left: 0%;
+  width: 40px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.label {
+  font-family: "Open sans", Helvetica;
+  font-size: 55px;
+  text-align: center;
+}
+
+/* -----------------------FIRST PAGE STYLES */
+.profile-container {
+  /* border: 1px solid rgb(224, 164, 86); */
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 15%;
 }
 
 .picture {
@@ -24,50 +69,100 @@
 }
 
 .src-image {
-  width: 100%;
-  height: auto;
+  margin: 5%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
-.detail {
-  flex: 5;
-}
-
-.detail > ul > li {
-  list-style-type: none;
-  font-family: Calibri, sans-serif;
-  font-size: 22px;
-  margin-bottom: 20px;
+.myself {
+  flex: 2;
+  margin-top: 1%;
 }
 
 .full-name {
   /* border: 1px solid #ccc; */
-  font-family: Calibri, sans-serif;
-  font-size: 36px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 3%;
   margin-right: 5%;
-  margin-top: 2%;
 }
 
-.profile-content > .text {
-  font-size: 22px;
-}
-
-.profile-content {
+.about-myself {
   /* border: 1px solid #ccc; */
-  font-family: Calibri, sans-serif;
-  font-size: 36px;
-  text-align: center;
+  font-family: "Open Sans", Helvetica;
+  font-size: 25px;
+  display: flex;
+  margin-left: 3%;
+  margin-right: 10%;
+}
+
+/* -----------------------SECOND PAGE STYLES */
+.tech-skills-container {
+  display: flex;
+  position: relative;
+  background: #000;
+  justify-content: center;
+  margin-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-set-label {
+  font-family: "Open sans", Helvetica;
+  font-size: 35px;
+  position: absolute;
+  top: 0%;
+  bottom: 90%;
+  left: 5%;
+  color: #fff;
+}
+
+.tech-skills-label {
+  font-family: "Open sans", Helvetica;
+  font-size: 25px;
+  color: #fff;
+}
+
+.tech-skills {
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 10%;
+}
+
+.software-development {
+  margin-right: 5%;
+}
+
+.embedded-systems {
+  margin-left: 5%;
+}
+
+.skill-list {
+  color: #fff;
+  font-family: "Open sans", Helvetica;
+}
+
+.skill-list > li {
+  margin-bottom: 5%;
+}
+
+/* -----------------------THIRD PAGE STYLES */
+.projects-container {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  /* border: 1px solid #ccc; */
 }
 
 .projects-container > .projects {
   display: flex;
   position: relative;
   justify-content: center;
-  border: 1px solid rgb(224, 164, 86);
+  /* border: 1px solid rgb(224, 164, 86); */
   margin-top: 5%;
 }
 
@@ -75,6 +170,77 @@
   float: inline-start;
   margin-left: 4%;
   margin-right: 4%;
-  width: 160px;
-  height: 160px;
+  width: 225px;
+  height: 225px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.c1:hover {
+  transition: box-shadow 0.2s linear;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.platform-content {
+  position: absolute;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+  width: 70%;
+  height: 90%;
+  left: 15%;
+  top: 20%;
+  z-index: 3;
+}
+
+.platform-content > h3 {
+  position: absolute;
+  font-family: "Open sans", Helvetica;
+  float: left;
+  height: fit-content;
+}
+
+.exit-button {
+  cursor: pointer;
+  padding-left: 90%;
+}
+
+.selected-platform {
+  color: #95cf00;
+  padding-left: 7%;
+}
+
+.project-per-platform {
+  border: 1px solid red;
+  margin-top: 7%;
+  display: inline-flex;
+  padding: 5%;
+}
+
+.project-per-platform > div {
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.project-per-platform > div > h3, p {
+  font-family: "Open sans", Helvetica;
+}
+
+/* -----------------------FOURTH PAGE STYLES */
+.about-container {
+  background: #000;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 700px;
+}
+
+.about-label {
+  color: #fff;
+}
+
+.about-container > p {
+  color: #fff;
+  font-size: 25px;
 }
