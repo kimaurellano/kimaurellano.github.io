@@ -153,7 +153,7 @@ html {
 /* -----------------------THIRD PAGE STYLES */
 .projects-container {
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 20%;
   /* border: 1px solid #ccc; */
 }
@@ -182,49 +182,99 @@ html {
 }
 
 .platform-content {
+  /* border: 1px solid #95cf00; */
   position: absolute;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   background: rgb(255, 255, 255);
-  width: 70%;
+  width: 100%;
   height: 90%;
-  left: 15%;
   top: 20%;
   z-index: 3;
 }
 
-.platform-content > h3 {
-  position: absolute;
+.exit-button {
   font-family: "Open sans", Helvetica;
   float: left;
-  height: fit-content;
-}
-
-.exit-button {
   cursor: pointer;
-  padding-left: 90%;
-}
-
-.selected-platform {
-  color: #95cf00;
-  padding-left: 7%;
+  margin-left: 90%;
 }
 
 .project-per-platform {
-  border: 1px solid red;
-  margin-top: 7%;
-  display: inline-flex;
-  padding: 5%;
+  /* border: 5px solid #65a5db; */
+  width: 100%;
+  height: 400px;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-right: 50%;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .project-per-platform > div {
-  border: 1px solid #ccc;
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  /* border: 1px solid red; */
+  position: relative;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  float: inline-start;
+  height: 100%;
+  width: 600px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
-.project-per-platform > div > h3, p {
+.title,
+.description,
+.link {
   font-family: "Open sans", Helvetica;
+}
+
+.title {
+  text-align: center;
+  background: #95cf00;
+  color: #fff;
+  padding: 15px;
+}
+
+.link {
+  padding-top: 7px;
+  width: 65px;
+  height: 35px;
+  background: #65a5db;
+  border-radius: 5px;
+  color: #fff;
+  position: absolute;
+  top: 80%;
+}
+
+.description {
+  text-align: center;
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.heritage-cooking-application > img {
+  position: absolute;
+  left: 45%;
+  bottom: 60%;
+  width: 50px;
+  height: 50px;
+}
+
+.waste-shredder-application > img {
+  position: absolute;
+  left: 45%;
+  bottom: 60%;
+  width: 50px;
+  height: 50px;
+}
+
+.psychrometer-logger-application > img {
+  position: absolute;
+  left: 45%;
+  bottom: 60%;
+  width: 50px;
+  height: 50px;
 }
 
 /* -----------------------FOURTH PAGE STYLES */
