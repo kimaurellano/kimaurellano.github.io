@@ -37,137 +37,144 @@
     </nav>
   </header>
 
-  <!-- Full page handler -->
-  <div id="full-page">
-    <!-- The first page -->
-    <div class="section active">
-      <div class="profile-container">
-        <img src="assets/profile_picture.png" alt="profile_picture" class="src-image">
-        <div class="myself">
-          <h3 class="full-name">KIM AURELLANO</h3>
-          <p class="about-myself">
-            I code by passion and take programming as a hobby and work. I love developing softwares!
-            Project automation with embedded systems.
-            <br>
-            <br>
-            <br>
-            More about me below
+  <!-- The first page -->
+  <div class="section active">
+    <div class="profile-container">
+      <img src="assets/profile_picture.png" alt="profile_picture" class="src-image">
+      <div class="myself">
+        <h3 class="full-name">KIM AURELLANO</h3>
+        <p class="about-myself">
+          I code by passion and take programming as a hobby and work. I love developing softwares!
+          Project automation with embedded systems.
+          <br>
+          <br>
+          <br>
+          More about me below
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The second page -->
+  <div class="tech-skills-container">
+    <h3 class="skill-set-label">SKILL SET</h3>
+    <div class="tech-skills">
+      <h3 class="tech-skills-label">Software Development</h3>
+      <ul class="skill-list">
+        <li>Java development with Android Studio</li>
+        <li>.NET framework</li>
+        <li>SQL/MySQL Database management</li>
+        <li>Game development with Unity Engine</li>
+        <li>Machine Learning algorithm in Weather Forecasting</li>
+      </ul>
+    </div>
+    <div class="tech-skills">
+      <h3 class="tech-skills-label">Web Development</h3>
+      <ul class="skill-list">
+        <li>Designed/Developed webpage for monitoring Soil's NPK nutrient content</li>
+        <li>Portfolio webpage</li>
+      </ul>
+    </div>
+    <div class="tech-skills">
+      <h3 class="tech-skills-label">Embedded Systems</h3>
+      <ul class="skill-list">
+        <li>Automation with arduino environment</li>
+        <li>IoT implementation with ESP8266 device</li>
+        <li>MQTT implementation through Raspberry PI</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The third page -->
+  <div class="projects-container">
+    <!-- Will contain project of a platform -->
+    <div class="platform-content" hidden>
+      <h3 class="exit-button">CLOSE</h3>
+
+      <!-- Projects list per platform -->
+      <div class="android-projects project-per-platform">
+        <div class="heritage-cooking-application">
+          <h3 class="title">Heritage Cooking Application</h3>
+          <p class="description">
+            Application which explains how cooking is <br>
+            done for a certain filipino dish. <br>
+            The app contains 20 list of filipino katutubo <br>
+            dishes including it's guidelines for cooking in <br>
+            tagalog or english language
           </p>
+          <img src="assets/Project-platform/Android/ic_logo.png" alt="cooking-app-logo">
+        </div>
+        <div class="waste-shredder-application">
+          <h3 class="title">Waste Shredder Controller Application</h3>
+          <p class="description">
+            Communicates with the microcontroller <br>
+            through bluetooth providing control/interface of <br>
+            how the machine should work. <br>
+            The application provides notification of <br>
+            machine's current status whether if <br>
+            there's mechanical error.
+          </p>
+          <img src="assets/ic-android.svg" alt="android-logo">
+        </div>
+        <div class="psychrometer-logger-application">
+          <h3 class="title">Psychrometer Logger Application</h3>
+          <p class="description">
+            Monitors ambient temperature <br>
+            within controlled area. Provides control <br>
+            to the airflow inside the area through the use <br>
+            of 2 industrial grade fans.
+          </p>
+          <img src="assets/ic-android.svg" alt="android-logo">
         </div>
       </div>
+      <div class="arduino-projects project-per-platform">
+        <div class="heritage-cooking-application">
+          <h3 class="title">Heritage Cooking Application</h3>
+          <p class="description">
+            Application which explains how cooking is <br>
+            done for a certain filipino dish. <br>
+            The app contains 20 list of filipino katutubo <br>
+            dishes including it's guidelines for cooking in <br>
+            tagalog or english language
+          </p>
+          <img src="assets/Project-platform/Android/ic_logo.png" alt="cooking-app-logo">
+        </div>
+      </div>
+      <div class="iot-projects project-per-platform"></div>
+      <div class="unity-projects project-per-platform"></div>
+      <div class="web-projects project-per-platform"></div>
+      <div class="rpi-projects project-per-platform"></div>
     </div>
 
-    <!-- The second page -->
-    <div class="section">
-      <div class="tech-skills-container">
-        <h3 class="skill-set-label">SKILL SET</h3>
-        <div class="tech-skills">
-          <h3 class="tech-skills-label">Software Development</h3>
-          <ul class="skill-list">
-            <li>Java development with Android Studio</li>
-            <li>.NET framework</li>
-            <li>SQL/MySQL Database management</li>
-            <li>Game development with Unity Engine</li>
-            <li>Machine Learning algorithm in Weather Forecasting</li>
-          </ul>
-        </div>
-        <div class="tech-skills">
-          <h3 class="tech-skills-label">Web Development</h3>
-          <ul class="skill-list">
-            <li>Designed/Developed webpage for monitoring Soil's NPK nutrient content</li>
-            <li>Portfolio webpage</li>
-          </ul>
-        </div>
-        <div class="tech-skills">
-          <h3 class="tech-skills-label">Embedded Systems</h3>
-          <ul class="skill-list">
-            <li>Automation with arduino environment</li>
-            <li>IoT implementation with ESP8266 device</li>
-            <li>MQTT implementation through Raspberry PI</li>
-          </ul>
-        </div>
-      </div>
+    <h3 class="label">PROJECTS I HAVE WORKED ON</h3>
+    <div class="projects">
+      <img src="assets/ic-android-button.svg" alt="android-button" class="c1" id="android-button">
+      <img src="assets/ic-arduino-button.svg" alt="arduino-button" class="c1" id="arduino-button">
+      <img src="assets/ic-iot-button.svg" alt="iot-button" class="c1">
     </div>
-
-    <!-- The third page -->
-    <div class="section">
-      <div class="projects-container">
-        <!-- Will contain project of a platform -->
-        <div class="platform-content">
-          <h3 class="selected-platform">ANDROID</h3>
-          <h3 class="exit-button">CLOSE</h3>
-
-          <!-- Projects list per platform -->
-          <div class="android-projects project-per-platform">
-            <div class="heritage-cooking-application">
-              <h3 class="title">Heritage Cooking Application</h3>
-              <p class="description">
-                Application which explains how cooking is done for a certain filipino dish. The app contains 20 list of
-                filipino katutubo dishes including it's guidelines for cooking in tagalog or english language
-              </p>
-            </div>
-            <div class="heritage-cooking-application">
-              <h3 class="title">Waste Shredder Controller Application</h3>
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Placeat maxime maiores doloremque eos laudantium et cum distinctio
-                illum adipisci, sunt, impedit optio voluptatum in harum enim, nobis rerum ab quibusdam.
-              </p>
-            </div>
-            <div class="heritage-cooking-application">
-              <h3 class="title">Heritage Cooking Application</h3>
-              <p class="description">
-                Application which explains how cooking is done for a certain filipino dish. The app contains 20 list of
-                filipino katutubo dishes including it's guidelines for cooking in tagalog or english language
-              </p>
-            </div>
-            <div class="heritage-cooking-application">
-              <h3 class="title">Waste Shredder Controller Application</h3>
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Placeat maxime maiores doloremque eos laudantium et cum distinctio
-                illum adipisci, sunt, impedit optio voluptatum in harum enim, nobis rerum ab quibusdam.
-              </p>
-            </div>
-          </div>
-          <!-- <div class="arduino-projects project-per-platform"></div>
-          <div class="iot-projects project-per-platform"></div>
-          <div class="unity-projects project-per-platform"></div>
-          <div class="web-projects project-per-platform"></div>
-          <div class="rpi-projects project-per-platform"></div> -->
-        </div>
-
-        <h3 class="label">ACCOMPLISHED PROJECT PLATFORMS</h3>
-        <div class="projects">
-          <img src="assets/ic-android-button.svg" alt="android-button" class="c1" id="android-button">
-          <img src="assets/ic-arduino-button.svg" alt="arduino-button" class="c1" id="arduino-button">
-          <img src="assets/ic-iot-button.svg" alt="iot-button" class="c1">
-        </div>
-        <div class="projects">
-          <img src="assets/ic-unity-button.svg" alt="unity-button" class="c1" id="unity-button">
-          <img src="assets/ic-rpi-button.svg" alt="rpi-button" class="c1" id="rpi-button">
-          <img src="assets/ic-html-button.svg" alt="html-button" class="c1" id="html-button">
-        </div>
-      </div>
+    <div class="projects">
+      <img src="assets/ic-unity-button.svg" alt="unity-button" class="c1" id="unity-button">
+      <img src="assets/ic-rpi-button.svg" alt="rpi-button" class="c1" id="rpi-button">
+      <img src="assets/ic-html-button.svg" alt="html-button" class="c1" id="html-button">
     </div>
+  </div>
 
-    <!-- Fourth page -->
-    <div class="label">
-      <div class="about-container">
-        <h3 class="about-label">ABOUT ME</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Accusamus distinctio ullam maxime incidunt nulla quae nemo illum,
-          quasi obcaecati a laudantium sunt ut. Odio
-          praesentium voluptates repudiandae odit enim alias.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Accusamus distinctio ullam maxime incidunt nulla quae nemo illum,
-          quasi obcaecati a laudantium sunt ut. Odio
-          praesentium voluptates repudiandae odit enim alias.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Accusamus distinctio ullam maxime incidunt nulla quae nemo illum,
-          quasi obcaecati a laudantium sunt ut. Odio
-          praesentium voluptates repudiandae odit enim alias.</p>
-      </div>
+  <!-- Fourth page -->
+  <div class="label">
+    <div class="about-container">
+      <h3 class="about-label">ABOUT ME</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Accusamus distinctio ullam maxime incidunt nulla quae nemo illum,
+        quasi obcaecati a laudantium sunt ut. Odio
+        praesentium voluptates repudiandae odit enim alias.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Accusamus distinctio ullam maxime incidunt nulla quae nemo illum,
+        quasi obcaecati a laudantium sunt ut. Odio
+        praesentium voluptates repudiandae odit enim alias.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Accusamus distinctio ullam maxime incidunt nulla quae nemo illum,
+        quasi obcaecati a laudantium sunt ut. Odio
+        praesentium voluptates repudiandae odit enim alias.</p>
     </div>
   </div>
 </body>
